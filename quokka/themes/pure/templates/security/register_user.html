@@ -19,6 +19,7 @@
                   {% if register_user_form.password_confirm %}
                     {{ render_field_with_errors(register_user_form.password_confirm, class="form-control") }}
                   {% endif %}
+                  {{ register_user_form.recaptcha }}
                   {{ render_button(register_user_form.submit, class="pure-button pure-button-primary") }}
                 </fieldset>
               </form>

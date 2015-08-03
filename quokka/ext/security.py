@@ -4,6 +4,7 @@ from flask.ext.security import MongoEngineUserDatastore
 from wtforms import TextField
 from quokka.modules.accounts.models import Role, User
 from quokka.core.templates import render_template
+from flask.ext.wtf.recaptcha import RecaptchaField
 
 
 class Security(_Security):
@@ -13,6 +14,7 @@ class Security(_Security):
 
 class ExtendedRegisterForm(RegisterForm):
     name = TextField('Name', [Required()])
+    recaptcha = RecaptchaField()
 
 
 def init_app(app, db):
