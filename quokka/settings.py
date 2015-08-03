@@ -273,6 +273,11 @@ SENTRY_DSN = ""
 # html or markdown
 DEFAULT_TEXT_FORMAT = "html"
 
+RECAPTCHA_USE_SSL = False
+RECAPTCHA_PUBLIC_KEY = '6LeYIbsSAAAAACRPIllxA7wvXjIE411PfdB2gt2J'
+RECAPTCHA_PRIVATE_KEY = '6LeYIbsSAAAAAJezaIq3Ft_hSTo0YtyeFG'
+RECAPTCHA_OPTIONS = {'theme': 'white'}
+
 "Shortner urls configuration"
 SHORTENER_ENABLED = False
 
