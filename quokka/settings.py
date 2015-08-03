@@ -273,15 +273,16 @@ SENTRY_DSN = ""
 # html or markdown
 DEFAULT_TEXT_FORMAT = "html"
 
+# recaptcha configuration
 RECAPTCHA_USE_SSL = False
 RECAPTCHA_PUBLIC_KEY = '6LeYIbsSAAAAACRPIllxA7wvXjIE411PfdB2gt2J'
 RECAPTCHA_PRIVATE_KEY = '6LeYIbsSAAAAAJezaIq3Ft_hSTo0YtyeFG'
 RECAPTCHA_OPTIONS = {'theme': 'white'}
 
-"Shortner urls configuration"
+# Shortner urls configuration
 SHORTENER_ENABLED = False
 
-"Config shorter information"
+# Config shorter information
 SHORTENER_SETTINGS = {"name": "BitlyShortener",
                       "bitly_api_key": "R_7d84f09c68be4c749cac2a56ace2e73f",
                       "bitly_token":
